@@ -3,9 +3,9 @@ class Xplorer < Formula
 
   desc "Crossplane resource explorer with claim-based discovery"
   homepage "https://github.com/XplorerHQ/xplorer"
-  url "https://github.com/XplorerHQ/dist/raw/main/bottle/xplorer-0.1.0-py3-none-any.whl"
-  sha256 "e6a3dbdd318480756060876ae965967223a3317cd09be979ef85c23d266e4bfb"
-  version "0.1.0"
+  url "https://github.com/XplorerHQ/homebrew-dist/raw/main/bottle/xplorer-0.2.0-py3-none-any.whl"
+  sha256 "9b0864796537ff1d752fa529a5b0c049cee111022ed4894fd06190f201031a44"
+  version "0.2.0"
 
   depends_on "python@3.11"
 
@@ -128,7 +128,7 @@ class Xplorer < Formula
     venv = virtualenv_create(libexec, "python3.11")
     venv.pip_install resources
     # Copy cached download to proper wheel filename for pip
-    wheel_file = buildpath/"xplorer-0.1.0-py3-none-any.whl"
+    wheel_file = buildpath/"xplorer-0.2.0-py3-none-any.whl"
     cp cached_download, wheel_file
     venv.pip_install wheel_file
     bin.install_symlink "#{libexec}/bin/xplorer"
