@@ -3,7 +3,7 @@ class Heavenly < Formula
 
   desc "Heavenly Crossplane claim testing and analysis tools"
   homepage "https://github.com/XplorerHQ/heavenly"
-  url "https://github.com/XplorerHQ/dist/raw/main/bottle/heavenly-1.0.1-py3-none-any.whl"
+  url "https://github.com/XplorerHQ/homebrew-dist/raw/main/bottle/heavenly-1.0.1-py3-none-any.whl"
   sha256 "a554dd3d4e589c5b7633f5c1a3713155b3465ac950f653e88756e902a7627afb"
   version "1.0.1"
 
