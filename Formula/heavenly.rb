@@ -3,9 +3,9 @@ class Heavenly < Formula
 
   desc "Heavenly Crossplane claim testing and analysis tools"
   homepage "https://github.com/XplorerHQ/heavenly"
-  url "https://github.com/XplorerHQ/dist/raw/main/bottle/heavenly-1.0.0-py3-none-any.whl"
-  sha256 "8c5e1a8b6b38486bb9190fb49896de7d888b560451795fd852e6f8a01dfd8442"
-  version "1.0.0"
+  url "https://github.com/XplorerHQ/dist/raw/main/bottle/heavenly-1.0.1-py3-none-any.whl"
+  sha256 "a554dd3d4e589c5b7633f5c1a3713155b3465ac950f653e88756e902a7627afb"
+  version "1.0.1"
 
   depends_on "python@3.11"
 
@@ -23,7 +23,7 @@ class Heavenly < Formula
     venv = virtualenv_create(libexec, "python3.11")
     venv.pip_install resources
     # Copy cached download to proper wheel filename for pip
-    wheel_file = buildpath/"heavenly-1.0.0-py3-none-any.whl"
+    wheel_file = buildpath/"heavenly-1.0.1-py3-none-any.whl"
     cp cached_download, wheel_file
     venv.pip_install wheel_file
     bin.install_symlink "#{libexec}/bin/test-claim"
