@@ -6,7 +6,7 @@ class Xplorer < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.0/xplorer-0.5.0-darwin-arm64.tar.gz"
-      sha256 "ccd69a74df95c779b86346ae4468066ba376ce8375541cd67d5c8bda1c2bc5ad"
+      sha256 "771822941ac84e209fea5099e41764d4d92dba2ea142afae6c47c0282d106ab9"
     else
       url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.0/xplorer-0.5.0-darwin-x64.tar.gz"
       sha256 "PLACEHOLDER_X64_SHA256"
