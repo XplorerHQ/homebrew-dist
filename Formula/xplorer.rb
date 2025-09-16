@@ -5,23 +5,23 @@ class Xplorer < Formula
   # Binary distribution - platform-specific URLs
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.0/xplorer-0.5.0-darwin-arm64.tar.gz"
-      sha256 "771822941ac84e209fea5099e41764d4d92dba2ea142afae6c47c0282d106ab9"
+      url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.1/xplorer-0.5.1-darwin-arm64.tar.gz"
+      sha256 "a80b1953d7b135b0dcfe6bc6be2430cdfe5c778ed26595785cf7cf8268663abd"
     else
-      url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.0/xplorer-0.5.0-darwin-x64.tar.gz"
+      url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.1/xplorer-0.5.1-darwin-x64.tar.gz"
       sha256 "PLACEHOLDER_X64_SHA256"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.0/xplorer-0.5.0-linux-arm64.tar.gz"
+      url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.1/xplorer-0.5.1-linux-arm64.tar.gz"
       sha256 "PLACEHOLDER_LINUX_ARM64_SHA256"
     else
-      url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.0/xplorer-0.5.0-linux-x64.tar.gz"
+      url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.1/xplorer-0.5.1-linux-x64.tar.gz"
       sha256 "PLACEHOLDER_LINUX_X64_SHA256"
     end
   end
   
-  version "0.5.0"
+  version "0.5.1"
 
   # No dependencies - binary is self-contained!
 
