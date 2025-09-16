@@ -26,8 +26,9 @@ class Xplorer < Formula
   # No dependencies - binary is self-contained!
 
   def install
-    # Binary distribution - simply copy the binary to bin/
-    bin.install "xplorer"
+    # Binary distribution - install entire directory structure
+    libexec.install Dir["*"]
+    bin.write_exec_script libexec/"xplorer"
   end
 
   def caveats
