@@ -5,7 +5,7 @@ class Xplorer < Formula
   # Binary distribution - platform-specific URLs
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.2/xplorer-0.5.2-darwin-arm64.tar.gz"
+      url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.3/xplorer-0.5.3-darwin-arm64.tar.gz"
       sha256 "5eec2005117dac6bbdbfa51ed5cb52b1cb0e4c15ea17648b0cced6b2758068c0"
     else
       url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.1/xplorer-0.5.1-darwin-x64.tar.gz"
