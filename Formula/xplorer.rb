@@ -5,8 +5,8 @@ class Xplorer < Formula
   # Binary distribution - platform-specific URLs
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.6.4/xplorer-0.6.4-darwin-arm64.tar.gz"
-      sha256 "3738cf6a5bdae0011330c336166c0f9525834afc0dc29fb458aaff3330bb07aa"
+      url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.6.5/xplorer-0.6.5-darwin-arm64.tar.gz"
+      sha256 "345d9fd35f2ed7e78db5f1171ddb088721c5afe2c0f68df9679993496bf60162"
     else
       url "https://github.com/XplorerHQ/homebrew-dist/releases/download/v0.5.1/xplorer-0.5.1-darwin-x64.tar.gz"
       sha256 "PLACEHOLDER_X64_SHA256"
@@ -21,7 +21,7 @@ class Xplorer < Formula
     end
   end
 
-  version "0.6.4"
+  version "0.6.5"
 
   # No dependencies - binary is self-contained!
 
