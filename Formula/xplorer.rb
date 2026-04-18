@@ -5,19 +5,19 @@ class Xplorer < Formula
   # Binary distribution - platform-specific URLs from xplorer-community releases
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/XplorerHQ/xplorer-community/releases/download/v1.0.0-alpha.11/xplorer-1.0.0-alpha.11-darwin-arm64.tar.gz"
-      sha256 "4aa0a7ecc7ce2b90dcd3dc3cd6f16a3e6b746eeb76ea8006b99c3c48ad6c8008"
+      url "https://github.com/XplorerHQ/xplorer-community/releases/download/v1.0.0-alpha.12/xplorer-1.0.0-alpha.12-darwin-arm64.tar.gz"
+      sha256 "c06020208827c96538bb9e27594f194de179cd04ab936d94e84bc3285d3c8273"
     else
-      url "https://github.com/XplorerHQ/xplorer-community/releases/download/v1.0.0-alpha.11/xplorer-1.0.0-alpha.11-darwin-x64.tar.gz"
-      sha256 "1424059291a4d0f486a5743738b830a5e15e05290f34b8c4a34dc4d13ceb235b"
+      url "https://github.com/XplorerHQ/xplorer-community/releases/download/v1.0.0-alpha.12/xplorer-1.0.0-alpha.12-darwin-x64.tar.gz"
+      sha256 "25b1b78f2133d2b6e092e607afc8a0b0a24df0f0ce514e944cadbf21c140bbcc"
     end
   elsif OS.linux?
     # Only x64 supported currently - arm64 can be added when there's demand
-    url "https://github.com/XplorerHQ/xplorer-community/releases/download/v1.0.0-alpha.11/xplorer-1.0.0-alpha.11-linux-x64.tar.gz"
-    sha256 "fd4cd25cae80bccb8f3be28f96b7e43f66aacf9f752d36039fa2730c06a327f5"
+    url "https://github.com/XplorerHQ/xplorer-community/releases/download/v1.0.0-alpha.12/xplorer-1.0.0-alpha.12-linux-x64.tar.gz"
+    sha256 "285323d1ccf863e5d6165fad437cb4227f64b5e26458599ccdf3128c087017b4"
   end
 
-  version "1.0.0-alpha.11"
+  version "1.0.0-alpha.12"
 
   def install
     libexec.install Dir["*"]
