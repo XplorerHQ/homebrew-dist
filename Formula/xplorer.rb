@@ -6,15 +6,15 @@ class Xplorer < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/XplorerHQ/xplorer-community/releases/download/v1.0.0-alpha.16/xplorer-1.0.0-alpha.16-darwin-arm64.tar.gz"
-      sha256 "847284ced7c9859b081ef8ebce4776c68ce040fb7c0368f181b4a7de96c90af6"
+      sha256 "aaa1b0152b9c6208afe5a3ff2bc4c8bf83346d437e8d63c7c7d7df14fd41b0d8"
     else
       url "https://github.com/XplorerHQ/xplorer-community/releases/download/v1.0.0-alpha.16/xplorer-1.0.0-alpha.16-darwin-x64.tar.gz"
-      sha256 "955e2106a16907ca6c99cc145ca626e6ca9b8c4844679ab1486b5a2efbde3526"
+      sha256 "cef70eda8785685f665b527685fad7ca2a32744d786dfad98b43006161690124"
     end
   elsif OS.linux?
     # Only x64 supported currently - arm64 can be added when there's demand
     url "https://github.com/XplorerHQ/xplorer-community/releases/download/v1.0.0-alpha.16/xplorer-1.0.0-alpha.16-linux-x64.tar.gz"
-    sha256 "f0d2c02d98c8a982494b0b687c3f113aac39d97700792932ac0c6666533b97ac"
+    sha256 "9b7cb1289e482d5dddd58f56cef38a528b5e80608dee0c1b3754942cced32b9a"
   end
 
   version "1.0.0-alpha.16"
