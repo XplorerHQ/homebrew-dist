@@ -36,12 +36,21 @@ Heavenly Crossplane claim testing and analysis tools.
 brew install XplorerHQ/dist/heavenly
 ```
 
+#### codify-rs
+
+Multi-language L/N/C/P function metrics over tree-sitter, the Rust analysis CLI.
+
+```bash
+brew install XplorerHQ/dist/codify-rs
+```
+
 Or after tapping:
 
 ```bash
 brew install xplorer
 brew install xplorer-cache
 brew install heavenly
+brew install codify-rs
 ```
 
 ## Available Formulas
@@ -51,6 +60,7 @@ brew install heavenly
 | `xplorer` | Crossplane resource explorer with claim-based discovery | 0.1.0 |
 | `xplorer-cache` | CLI for xplorer cache server | 0.1.0 |
 | `heavenly` | Heavenly Crossplane claim testing and analysis tools | 1.0.0 |
+| `codify-rs` | Multi-language L/N/C/P function metrics over tree-sitter | 0.1.0 |
 
 ## Usage
 
@@ -66,6 +76,10 @@ xplorer --kind CompositeDatabase  # Show all claims for specific kind
 
 # Example usage for xplorer-cache
 xplorer-cache --help
+
+# Example usage for codify-rs - Rust analysis CLI
+codify-rs --help
+codify-rs scan path src
 
 # Example usage for heavenly - Crossplane testing tools
 test-claim --help                                  # Show available subcommands
