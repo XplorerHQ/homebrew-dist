@@ -5,18 +5,18 @@ class CodifyRs < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/XplorerHQ/xplorer-community/releases/download/codify-rs-v0.1.0/codify-rs-0.1.0-darwin-arm64.tar.gz"
-      sha256 "5566f3e14e87be38143c3f85a1fddcd84ba916ab26bc9c3023c0eb7c5d176e9d"
+      sha256 "745b6e2ba8e5d53aea8e922bcc0caeb391f4d3c582e769dab6384ac273d0bcfa"
     else
       url "https://github.com/XplorerHQ/xplorer-community/releases/download/codify-rs-v0.1.0/codify-rs-0.1.0-darwin-x64.tar.gz"
-      sha256 "959f2949c9975b36d47bd03560b34bd7612e5f7a308cd45a73d7d1e292fde0f1"
+      sha256 "6101b4e24eab29aa6be25c8f8c7bd22b4274356b1e7caf8467b8dfe1b8104f25"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/XplorerHQ/xplorer-community/releases/download/codify-rs-v0.1.0/codify-rs-0.1.0-linux-arm64.tar.gz"
-      sha256 "bf342999330b65c3435590eb3aa234c688b5756f87f778140d5b53f273208bc7"
+      sha256 "e70cf73ef2d997770339bf6969fdd11f3dc90c9217e7da64af536c4f6cb1a46c"
     else
       url "https://github.com/XplorerHQ/xplorer-community/releases/download/codify-rs-v0.1.0/codify-rs-0.1.0-linux-x64.tar.gz"
-      sha256 "0a0ec10955643c7eaab536507abce0ef6db9ad2555a47669ea7375d3d9529734"
+      sha256 "b152d3e8c51f2923d3c1586c63b49e74fd83c1a9eebcbd2bfac402fa9c67060d"
     end
   end
 
